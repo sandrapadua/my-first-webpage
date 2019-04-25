@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Styles.css">
+
+  <title>DETAILS</title>
+ </head>
+<body background="images/image5.png">
+
+
+
+
+<div align= "center">
+<ul>
+<button id="box" class="collapsible">About Me</button>
+
+<div id = "accordion" class="content" >
+  <P> Hey, this is my homepage, so I have to say something about myself. Sometimes it is hard to introduce yourself because you know yourself so well that you do not know where to start with.</p>
+  <p>  My name is <strong> BRIJITH SANDRA PADUA </strong>, Born and bought up in India. I came to this beautiful place by the last of September. And now residing at Hoofddorp with my husband. I graduated in Bachelor of Technology and have been worked as a java developer for past one year in India.  </p>
+</div>
+</ul>
+<ul>
+<button id="box" class="collapsible">Interests And Hobbies</button>
+<div  id = "accordion"class="content">
+  <P> * Travelling - In my perspective travelling is a activity that has a kind of reset button in our lives </p>
+  <p> * Cooking - Experimenting new foods and exploring diffrent taste is next favorite thing for mine. Never used ot say NO to food.</p>
+
+  </div>
+  </ul>
+  <ul >
+<button  id="box" class="collapsible">Contact Me </button>
+<div id = "accordion" class="content">
+  <P> Mail id sandrapadua5@gmail.com</p>
+   <p>  Github: https://github.com/sandrapadua</p>
+<p>LinkedIn: https://www.linkedin.com/in/sandra-padua-98b884145/</p>
+  </div>
+</ul>
+</div>
+<!--
+<div class="button">
+<a href="index.html"><input type="button" value="Home"></a></div> -->
+<div class="button">
+<a href="index.html">
+ <input type="image" src="images/homeicon.png" alt="Submit" width="48" height="48"></a>
+</div>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+  </body>
+</html>
